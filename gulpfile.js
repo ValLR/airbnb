@@ -34,7 +34,10 @@ gulp.task("webserver", function(){
 	}));
 });
 
+gulp.task("watch",function(){
+	gulp.watch("assets/sass/*.scss", ["style"]);
+});
 
 /*Ahora le indicamos a gulp cuales son las tareas que debe ejecutar*/
 /*cuando corramos el comando gulp en la terminal*/
-gulp.task("default",["script","style","webserver"]);
+gulp.task("default",["script","style","webserver","watch"]);
