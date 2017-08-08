@@ -72,5 +72,36 @@
 .segundaSection-h4{
 	padding-left:60px;
 }
+/*------ Footer------*/
+.page-footer .footer-copyright{
+ color: #484848;
+ background-color: white;	
+}
+.page-footer {
+  margin: 50px 20px;
+  background-color: white;
+  color: #484848;
+  ul li {
+    background-color: white;
+    color: #484848;
+  }
+}
+
+select {
+  border-radius: 8px;
+  margin: 10px 0;
+  width: 70%;
+}
+
+.footer-copyright {
+  padding-top: 40px;
+  color: #484848;
+  a, img{
+    display: inline-block;
+    color: #484848;
+    margin-left: 30px;
+  }
+}
+
 
  /*FIN INDEX FIN INDEX FIN INDEX FIN INDEX FIN INDEX FIN INDEX*/
