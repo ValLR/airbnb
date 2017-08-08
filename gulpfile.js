@@ -27,7 +27,7 @@ gulp.task("style",function(){
 gulp.task("webserver", function(){
 	gulp.src("../airbnb/")
 		.pipe(webserver({
-		fallback: "index.html",
+		fallback: "index2.html",
 		livereload: true,
 		directoryListing:false,
 		open:true
