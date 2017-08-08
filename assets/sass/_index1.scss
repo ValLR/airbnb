@@ -1,31 +1,65 @@
+ /* NAV NAV NAV NAV NAV*/
 
-	/* INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX*/
-	#primerSection{
-		background-image:url(../img/fondo2.jpg);
-		height:550px;
-		background-repeat:none;
-		background-position:center;
-		background-size:cover;
-	}
+ .nav-wrapper {
+ 	li a {
+ 		background-color: transparent;
+ 		color: #484848;
+ 	}
+ }
+ #logo-nav{
+ 	height: 30px;
+ 	margin-left: 100px;
+ }
+ .nav {
+ 	background-color: #ffffff !important;
+ }
+ /* INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX*/
+ #primerSection{
+ 	background-image:url(../img/fondo2.jpg);
+ 	height:550px;
+ 	background-repeat:none;
+ 	background-position:center;
+ 	background-size:cover;
+ }
+#p-espacioVacio{
+	color:whitesmoke;
+}
+.primerSection-p{
+	padding:0;
+	margin:0;
+}
+ #primerSection_conten-input{
+ 	background-color:whitesmoke;
+ 	border-radius:15px;
+ 	margin-top:100px;
+ 	border:3px solid red;
+ }
+ /*CALENDARIO*/
+ .calendarios{
+ 	width:50px;
+ 	display:inline-block;
+ }
+ .calendario-salida{
+ 	margin:0;
+ }
+ .conten-info{
+ 	border:3px solid red;
+ }
 
-	#primerSection_conten-input{
-		background-color:whitesmoke;
-		border-radius:15px;
-		margin-top:100px;
-	}
-	/*CALENDARIO*/
-	.calendarios{
-		width:50px;
-		display:inline-block;
-	}
-	.calendario-salida{
-        position:relative;
-        top:50px;
-	}
-	.conten-info{
-		border:1px solid black;
-	}
-
-
+ /*------ segunda section------*/
+ .segundaSection-images{
+ 	width:220px;
+ 	padding-left:60px;
+ 	display:inline-block;
+ }
+ .publicidadTres{
+ 	width:250px;
+ }
+.publicidadCinco{
+	width:240px;
+}
+.segundaSection-h4{
+	padding-left:60px;
+}
 
  /*FIN INDEX FIN INDEX FIN INDEX FIN INDEX FIN INDEX FIN INDEX*/
