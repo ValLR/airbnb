@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://use.fontawesome.com/477be0bbd3.js"></script>
+	<link rel="stylesheet" href="node_modules/nouislider/distribute/nouislider.min.css">
+	<link rel="stylesheet" href="dist/css/style.min.css">
+
+	<title>index-dos</title>
+</head>
+<body>
+	<nav>
+		<!-- aqui deberia ir el mismo -->
+	</nav>
+	<section class="uno">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col s7 m 7 l7">	
+					<div class="row">
+						<div class="col l3">
+							Fechas
+						</div>
+						<div class="input-field col l3">
+          					<input id="icon_prefix" type="text" class="validate">
+          					<label for="icon_prefix">Fecha Inicio</label>
+       					</div>
+						<div class="input-field col l3">
+          					<input id="icon_prefix" type="text" class="validate">
+          					<label for="icon_prefix">Fecha Final</label>
+       					</div>
+       					<div class="col l3">					
+							<div class="col l6 center">
+							 	<label><i class="material-icons">person</i></label>
+  									<select class="browser-default">
+    									<option value="" disabled selected></option>
+    									<option value="1">1 Adulto</option>
+    									<option value="2">2 Adulto</option>
+    									<option value="3">3 Adulto</option>
+    									<option value="4">4 Adulto</option>
+  									</select>
+  							</div>						
+							<div class="col l6 center">
+								<label><i class="material-icons">child_friendly</i></label>
+  									<select class="browser-default">
+    									<option value="" disabled selected></option>
+    									<option value="1">1 Bebe</option>
+    									<option value="2">2 Bebe</option>
+    									<option value="3">1 Niño</option>
+    									<option value="4">2 Niños</option>
+  									</select>
+  							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l3">
+							<p>Tipo de habitacion</p>	
+						</div>
+						<div class="col l3">
+							<form action="#">
+    							<p>
+    								<input type="checkbox" id="test1"/> 
+    								<label for="test1"><i class="material-icons">home</i> Casa Entera</label>
+     							</p>
+     						</form>
+     					</div>
+						<div class="col l3">
+							<form action="#">
+    							<p>
+    								<input type="checkbox" id="test2"/> 
+    								<label for="test2"><i class="fa fa-bed" aria-hidden="true"></i> Habitación Privada</label>
+     							</p>
+     						</form>
+						</div>
+						<div class="col l3">
+							<form action="#">
+    							<p>
+    								<input type="checkbox" id="test3"/> 
+    								<label for="test3"><i class="fa fa-bed" aria-hidden="true"></i> Habitacion Compartida </label>
+     							</p>
+     						</form>
+						</div>					
+					</div>
+					<div class="row">
+						<div class="col s3">
+							Rango de Precios
+						</div>
+						<div class="col s9">
+							<div id="test-slider"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s3">
+							<p>Reserva Inmediata</p>
+						</div>
+						<div class="col s6">
+							<p>Anuncios que no requieren que el anfitrion acepte la solicitud</p>
+						</div>
+						<div class="col s3">
+							<div class="switch">
+   							 <label>
+      							Off
+      							<input type="checkbox">
+      							<span class="lever"></span>
+      							On
+    						</label>
+  							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s3">
+							<a class="waves-effect waves-light btn">Filtros</a>
+						</div>
+						
+					</div>
+
+				</div>
+				<div class="col s5 m5 l5">
+					<!-- aqui va el mapa -->
+				</div>				
+			</div>
+		</div>
+	</section>
+	<script src="dist/js/script.js"></script>
+	<script src="assets/js/select.js"></script>
+	<script src="node_modules/nouislider/distribute/nouislider.min.js"></script>
+</body>
+</html>
