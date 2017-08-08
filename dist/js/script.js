@@ -20518,7 +20518,6 @@ if (jQuery) {
         } else {
           document.getElementById('iw-website-row').style.display = 'none';
         }
-<<<<<<< HEAD
       }
 
 /* CALENDARIO*/
@@ -20533,8 +20532,5 @@ $(document).ready(function() {
     closeOnSelect: false // Close upon selecting a date,
 });
 	/*SELECT*/
-	  $('select').material_select();
+	$('select').material_select();
 });
-=======
-      }
->>>>>>> ac1e253cda5db0369c9b615de3e27c6aa41cecb4

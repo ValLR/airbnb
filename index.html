@@ -23,7 +23,7 @@
 	</div>
 	<!-- ................Fin navbar................... -->
 	<header>
-		<div class="containe-fluid">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col s12 m12 l12" id="primerSection">
 					<div class="col offset-m2 offset-l2 m8 l8" id="primerSection_conten-input">
@@ -34,9 +34,13 @@
 							<input type="text">
 						</div>
 						<div class="col m4 l4" class="conten-info">
-							<p>Cuando:</p>
-							<input type="text" class="datepicker" placeholder="Llegada" class="calendarios">
-							<input type="text" class="datepicker" placeholder="Salida" class="calendarios">
+							<div class="col m6 l6">
+								<p>Cuando:</p>
+								<input type="text" class="datepicker" placeholder="Llegada" class="calendarios">
+							</div>
+							<div class="col m6 l6">
+								<input type="text" class="datepicker" placeholder="Salida" class="calendarios calendario-salida">
+							</div>
 						</div>
 						<div class="col m4 l4" class="conten-info">
 							<div class="input-field col s12">
@@ -62,7 +66,7 @@
 			</div>
 		</div>
 	</header>
-	<script type="text/javascript" src="dist/js/script.js"></script>
 	<script src="dist/js/stylesWithJQuery.js"></script>	
+	<script type="text/javascript" src="dist/js/script.js"></script>
 </body>
-</html>
+</html> 
