@@ -7,24 +7,62 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 </head>
 <body>
-<!-- ................Inicio navbar................... -->
+	<!-- ................Inicio navbar................... -->
 	<div class="navbar-fixed">
-	  	<nav class="transparent z-depth-0">
-	    	<div class="nav-wrapper">
-			    <a href="#" class="brand-logo"><img src="dist/img/airbnb_logo_small.png" id="logo-nav" alt=""></a>
-			    <ul id="nav-mobile" class="right hide-on-med-and-down">
-			        <li><a href="sass.html">Conviértete en anfitrión</a></li>
-			        <li><a href="badges.html">Ayuda</a></li>
-			        <li><a href="collapsible.html">Regístrate</a></li>
-			        <li><a href="collapsible.html">Iniciar sesión</a></li>
-			    </ul>
+		<nav class="transparent z-depth-0">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo"><img src="dist/img/airbnb_logo_small.png" id="logo-nav" alt=""></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Conviértete en anfitrión</a></li>
+					<li><a href="badges.html">Ayuda</a></li>
+					<li><a href="collapsible.html">Regístrate</a></li>
+					<li><a href="collapsible.html">Iniciar sesión</a></li>
+				</ul>
 			</div>
-	  	</nav>
+		</nav>
 	</div>
-
-
-<!-- ................Fin navbar................... -->
-<script type="text/javascript" src="dist/js/script.js"></script>
-<script src="dist/js/stylesWithJQuery.js"></script>	
+	<!-- ................Fin navbar................... -->
+	<header>
+		<div class="containe-fluid">
+			<div class="row">
+				<div class="col s12 m12 l12" id="primerSection">
+					<div class="col offset-m2 offset-l2 m8 l8" id="primerSection_conten-input">
+						<h2 class="primerSection_h2">Encuentra alojamientos en Airbnb</h2>
+						<h6 class="primerSection_h6">Descubre casas enteras y habitaciones privadas, perfectas para cualquier viaje.</h6>
+						<div class="col m4 l4" class="conten-info">
+							<p>Donde:</p>
+							<input type="text">
+						</div>
+						<div class="col m4 l4" class="conten-info">
+							<p>Cuando:</p>
+							<input type="text" class="datepicker" placeholder="Llegada" class="calendarios">
+							<input type="text" class="datepicker" placeholder="Salida" class="calendarios">
+						</div>
+						<div class="col m4 l4" class="conten-info">
+							<div class="input-field col s12">
+								<select>
+									<option value="" disabled selected>Adultos</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+								<select>
+									<option value="" disabled selected>Niños</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+								<label>Materialize Select</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<script type="text/javascript" src="dist/js/script.js"></script>
+	<script src="dist/js/stylesWithJQuery.js"></script>	
 </body>
 </html>

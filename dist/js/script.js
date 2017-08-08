@@ -20518,4 +20518,23 @@ if (jQuery) {
         } else {
           document.getElementById('iw-website-row').style.display = 'none';
         }
+<<<<<<< HEAD
       }
+
+/* CALENDARIO*/
+$(document).ready(function() {
+
+	$('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+});
+	/*SELECT*/
+	  $('select').material_select();
+});
+=======
+      }
+>>>>>>> ac1e253cda5db0369c9b615de3e27c6aa41cecb4
