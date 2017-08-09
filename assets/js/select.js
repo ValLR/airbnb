@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('select').material_select();
-
+/*
     var slider = document.getElementById('test-slider');
   	noUiSlider.create(slider, {
    	start: [20, 80],
@@ -14,14 +14,5 @@ $(document).ready(function() {
    		format: wNumb({
      	decimals: 0
    		})
-  	});
-    $('.slider').slider();
-    // Pause slider
-    $('.slider').slider('pause');
-    // Start slider
-    $('.slider').slider('start');
-    // Next slide
-    $('.slider').slider('next');
-    // Previous slide
-    $('.slider').slider('prev');
+  	});*/
  });
