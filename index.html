@@ -27,42 +27,43 @@
 			<div class="row">
 				<div class="col s12 m12 l12" id="primerSection">
 					<div class="primerSection-contenedor col offset-m2 offset-l2 m8 l8">
-						<h2 class="primerSection_h2">Encuentra alojamientos en Airbnb</h2>
-						<h6 class="primerSection_h6">Descubre casas enteras y habitaciones privadas, perfectas para cualquier viaje.</h6>
+						<h2 class="center-align">Encuentra alojamientos en Airbnb</h2>
+						<h6 class="center-align">Descubre casas enteras y habitaciones privadas, perfectas para cualquier viaje.</h6>
 						<div id="primerSection_conten-input">
 							<div class="col m4 l4" class="conten-info">
 								<p class="primerSection-p">Donde:</p>
-								<input type="text">
+								<input id="autocomplete" type="text">
 							</div>
-							<div class="col m4 l4" class="conten-info">
+							<div class="col m3 l3" class="conten-info">
 								<div class="col m6 l6">
-									<p class="primerSection-p">Cuando:</p>
+									<p class="primerSection-p">Llegada</p>
 									<input type="text" class="datepicker" placeholder="Llegada" class="calendarios">
 								</div>
 								<div class="col m6 l6">
-									<p id="p-espacioVacio" class="primerSection-p">.</p>
+									<p id="p-espacioVacio" class="primerSection-p">Salida</p>
 									<input type="text" class="datepicker" placeholder="Salida" class="calendarios calendario-salida">
 								</div>
 							</div>
-							<div class="col m4 l4" class="conten-info">
-								<div class="input-field col s12 m6 l6">
-									<select>
-										<option value="" disabled selected>Adultos</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</div>
-								<div class="input-field col s12 m6 l6">
-									<select>
-										<option value="" disabled selected>Niños</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-									<label>Huespedes</label>
+							<div class="col m3 l3" class="conten-info">
+								<div class="col l12 m12 s6">
+                  <select  class="browser-default sel-index1">
+                      <option value="" disabled selected>Huespedes</option>
+                      <option value="1">Personal</option>
+                      <option value="2">Pareja</option>
+                      <option value="3">Familiar</option>
+                  </select>
+                  <select class="browser-default sel-index1">
+                      <option value="" disabled selected>Niños</option>
+                      <option value="1">0</option>
+                      <option value="2">1</option>
+                      <option value="3">2</option>
+                      <option value="3">+2</option>
+                  </select>
+              </div>
+							</div>
+							<div class="col m2 l2 button-box">
+								<div class="row center-align">
+									<a id="search" href="fake.html" class="waves-effect waves-light btn">Buscar</a>									
 								</div>
 							</div>
 						</div>
@@ -72,6 +73,7 @@
 		</div>
 	</header>
 	<section>
+
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col s12 m12 l12" id="segundaSection" >
@@ -102,7 +104,7 @@
   <footer class="page-footer">
       <div class="container-fluid">
           <div class="row">
-              <div class="col l3 s6 left">
+              <div class="col l3 m3 s6 left">
                   <select class="browser-default">
                       <option value="" disabled selected>Español</option>
                       <option value="1">Option 1</option>
@@ -116,7 +118,7 @@
                       <option value="3">Option 3</option>
                   </select>
               </div>
-            <div class="col l3 s6">
+            <div class="col l3 m3 s6">
                 <h6><strong>Airbnb</strong></h6>
                     <ul>
                       <li><a href="" class="grey-text">Acerca de</a></li>
@@ -126,7 +128,7 @@
                       <li><a href="" class="grey-text">Ayuda</a></li>
                     </ul>
             </div>
-            <div class="col l3 s6">
+            <div class="col l3 m3 s6">
                 <h6><strong>Descubre Airbnb</strong></h6>
                     <ul>
                       <li><a href="" class="grey-text">Confianza y seguridad</a></li>
@@ -136,7 +138,7 @@
                       <li><a href="" class="grey-text">Guías</a></li>
                     </ul>
             </div>
-            <div class="col l3 s4">
+            <div class="col l3 m3 s4">
                 <h6><strong>Hospedar</strong></h6>
                     <ul>
                       <li><a href="" class="grey-text">Razones para hospedar</a></li>
@@ -160,11 +162,10 @@
                   
                </div>
     </div>
+
   </footer>
   <!--..........Fin footer ..................................-->
 	<script type="text/javascript" src="dist/js/script.js"></script>  
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyGkPPCqknByIJrlNhsFMyinmbcQDzqJc&libraries=places&callback=initMap"
-        async defer></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyGkPPCqknByIJrlNhsFMyinmbcQDzqJc&libraries=places&callback=initMap" async defer></script>
 </body>
 </html> 
