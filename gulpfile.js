@@ -8,7 +8,7 @@ var webserver = require("gulp-webserver");
 
 /*Configuración de la tarea 'gulpie'*/
 gulp.task("script",function(){
-	gulp.src(["node_modules/jquery/dist/jquery.js", "node_modules/materialize-css/dist/js/materialize.js", "assets/js/*.js"])
+	gulp.src(["node_modules/jquery/dist/jquery.js", "node_modules/materialize-css/dist/js/materialize.js", "assets/js/main.js", "assets/js/index2.js", "assets/js/material.js", "assets/js/select.js"])
 	.pipe(concat("script.js"))
 	//carpeta dist
 	.pipe(gulp.dest("dist/js/"));
