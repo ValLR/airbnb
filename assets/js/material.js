@@ -7,13 +7,10 @@ $(document).ready(function(){
     clear: 'Clear',
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
-	});
-	/*SELECT*/
-	
-	$('select').material_select();
+	});	
 	
 	$('.carousel').carousel({
-            dist:0, /* la propiedad dist en 0  quita el zoom pero no está funcionando*/
+            dist:0, //la propiedad dist en 0  quita el zoom pero no está funcionando
             shift:0,
             padding:20,
 

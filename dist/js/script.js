@@ -20253,6 +20253,15 @@ if (jQuery) {
   };
 })(jQuery);
 
+function initMap(){
+    var map = new google.maps.Map(document.getElementById("map"),{
+    zoom: 5,
+    center: {lat: -9.1191427, lng: -77.0349046},
+    mapTypeControl: false,
+    zoomControl: false,
+    streetViewControl: false,
+  });
+}
 $(document).ready(function(){	
 	$("#filtros").click(function(){
 		if($("#filter").hasClass("hide")== true){
@@ -20264,10 +20273,7 @@ $(document).ready(function(){
 
 	});
 })
-
-
-/* CALENDARIO*/
-$(document).ready(function() {
+$(document).ready(function(){
 
 	$('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
@@ -20276,17 +20282,17 @@ $(document).ready(function() {
     clear: 'Clear',
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
-});
-	/*SELECT*/
-	$('select').material_select();
+	});	
+	
 	$('.carousel').carousel({
-            dist:0, /* la propiedad dist en 0  quita el zoom pero no está funcionando*/
+            dist:0, //la propiedad dist en 0  quita el zoom pero no está funcionando
             shift:0,
             padding:20,
 
       });
 
 	/*NAV NAV NAV*/
+	
 	$(window).scroll(function() {
 		
 		if($(this).scrollTop() > 100) { 
@@ -20297,33 +20303,11 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#filtros").click(function(){
-		if($("#filter").hasClass("hide")== true){
-			$("#filter").removeClass("hide");
-		}
-		else{
-			$("#filter").addClass("hide");
-		}
-
-	});
 });
 $(document).ready(function() {
     $('select').material_select();
 
-    var slider = document.getElementById('test-slider');
-  	noUiSlider.create(slider, {
-   	start: [20, 80],
-   	connect: true,
-   	step: 1,
-   	orientation: 'horizontal', // 'horizontal' or 'vertical'
-   	range: {
-     'min': 0,
-     'max': 100
-   	},
-   		format: wNumb({
-     	decimals: 0
-   		})
-  	});
+   var slider = document.getElementById('test-slider');
     $('.slider').slider();
     // Pause slider
     $('.slider').slider('pause');
@@ -20332,5 +20316,5 @@ $(document).ready(function() {
     // Next slide
     $('.slider').slider('next');
     // Previous slide
-    $('.slider').slider('prev');
+    $('.slider').slider('prev');*/
  });
