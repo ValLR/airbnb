@@ -12,6 +12,12 @@ $(document).ready(function() {
 });
 	/*SELECT*/
 	$('select').material_select();
+	$('.carousel').carousel({
+            dist:0, /* la propiedad dist en 0  quita el zoom pero no está funcionando*/
+            shift:0,
+            padding:20,
+
+      });
 
 	/*NAV NAV NAV*/
 	$(window).scroll(function() {
