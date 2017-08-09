@@ -30,7 +30,7 @@
 	<section class="uno">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col s6 m6 l6">	
+				<div class="col s7 m7 l7">	
 					<div class="row">
 						<div class="col l3">
 							<p><b>Fechas</b></p>
@@ -177,15 +177,14 @@
 							<hr>
 							<div class="row">
 								<div class="col l3 m3">
-									<h5>Opciones</h5>
+									<p><b>Opciones</b></p>
 								</div>
-								<div class="col l9 m9">
+								<div class="col l4 m4">
 									<form action="#">
 										    <p>
 				      							<input type="checkbox" id="test5" />
 				      							<label for="test5">
-				      								<h5>Superhost</h5>
-													<p>Quédate en casa de<br>anfitriones exceptcionales<br><a href="#">Más información</a></p>
+				      								<b>Superhost</b><br>Quédate en casa de<br>anfitriones exceptcionales<br><a href="#">Más información</a>
 				      							</label>
 				    						</p>
 									</form>
@@ -194,13 +193,145 @@
 							<hr>
 							<div class="row">
 								<div class="col l3 m3">
-									<h5>Servicios</h5>
+									<p><b>Servicios</b></p>
+								</div>
+								<div class="col l9 m9">
+									<div class="col l4 m4">
+										<p>
+					      				<input type="checkbox" id="wifi" />
+					      				<label for="wifi">
+					      					<b>Internet inalámbrico<br>(wifi)</b>
+					      				</label>
+					      				</p>									
+									</div>
+									<div class="col l3 m3">
+										<p>
+						      				<input type="checkbox" id="tv" />
+						      				<label for="tv">
+						      					<b>TV</b>
+						      				</label>
+						      			</p>	
+									</div>
+								  	<div class="input-field col l5 m5">
+								    	<select multiple>
+								      		<option value="" disabled selected>Elige</option>
+								      		<option value="1">Cocina</option>
+								      		<option value="2">Jacuzzi</option>
+								      		<option value="3">Garage</option>
+								    	</select>
+								  	</div>
 								</div>
 							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<p><b>Servicios</b></p>
+								</div>
+								<div class="col l9 m9">
+									<div class="col l4 m4">
+										<p>
+						      				<input type="checkbox" id="asc" />
+						      				<label for="asc">
+						      					<b>Edificio con ascensor</b>
+						      				</label>
+					      				</p>									
+									</div>
+									<div class="col l3 m3">
+										<p>
+					      					<input type="checkbox" id="gym" />
+					      					<label for="gym">
+					      						<b>Gimnasio</b>
+					      					</label>
+					      				</p>
+									</div>
+								  	<div class="input-field col l5 m5">
+								    	<select multiple>
+								      		<option value="" disabled selected>Elige</option>
+								      		<option value="1">Parking gratis</option>
+								      		<option value="2">Piscina</option>
+								      		<option value="3">Laberinto</option>
+								    	</select>
+								  	</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<p><b>Normas de la<br>casa</b></p>
+								</div>
+								<div class="col l9 m9">
+									<div class="col l4 m4">
+										<p>
+					      					<input type="checkbox" id="petallowed" />
+					      					<label for="petallowed">
+					      						<b>Admite mascotas</b>
+					      					</label>
+					      				</p>										
+									</div>
+									<div class="col l4 m4">
+										<p>
+					      					<input type="checkbox" id="event" />
+					      					<label for="event">
+					      						<b>Apto para eventos</b>
+					      					</label>
+					      				</p>										
+									</div>
+									<div class="col l4 m4">
+										<p>
+					      					<input type="checkbox" id="smoke" />
+					      					<label for="smoke">
+					      						<b>Apto para fumadores</b>
+					      					</label>
+					      				</p>										
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<p><b>Vecidanrios</b></p>
+								</div>
+								<div class="col l9 m9">
+									<div class="col l4 m4">
+										<p>
+						      				<input type="checkbox" id="asc" />
+						      				<label for="asc">
+						      					<b>Edificio con ascensor</b>
+						      				</label>
+					      				</p>									
+									</div>
+									<div class="col l3 m3">
+										<p>
+					      					<input type="checkbox" id="gym" />
+					      					<label for="gym">
+					      						<b>Gimnasio</b>
+					      					</label>
+					      				</p>
+									</div>
+								  	<div class="input-field col l5 m5">
+								    	<select multiple>
+								      		<option value="" disabled selected>Elige</option>
+								      		<option value="1">Parking gratis</option>
+								      		<option value="2">Piscina</option>
+								      		<option value="3">Laberinto</option>
+								    	</select>
+								  	</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l5 m5"></div>
+								<div class="center-align col l7 m7">
+									<a id="cancelar" class="waves-effect waves-light btn">Cancelar</a> <a id="aplicar" class="waves-effect waves-light btn">Aplicar filtros</a>
+
+								</div>
+							</div>							
+
+
 					</section>
 					</div>
 					<div class="col s5 m5 l5">
 									<!-- aqui va el mapa -->
+						<div id="map"></div>
 					</div>				
 				</div>
 			</div>
@@ -268,7 +399,7 @@
     	</div>
   	</footer>		
 	<script src="dist/js/script.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyGkPPCqknByIJrlNhsFMyinmbcQDzqJc&libraries=places&callback=initMap"
-        async defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyGkPPCqknByIJrlNhsFMyinmbcQDzqJc&libraries=places&callback=initMap" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- jquery -->
 </body>
 </html>
