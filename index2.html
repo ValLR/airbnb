@@ -12,13 +12,25 @@
 	<title>index-dos</title>
 </head>
 <body>
-	<nav>
-		<!-- aqui deberia ir el mismo -->
-	</nav>
+	<!-- ................Inicio navbar................... -->
+	<div class="navbar-fixed">
+		<nav class="transparent z-depth-0">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo"><img src="dist/img/airbnb_logo_small.png" id="logo-nav" alt=""></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Conviértete en anfitrión</a></li>
+					<li><a href="badges.html">Ayuda</a></li>
+					<li><a href="collapsible.html">Regístrate</a></li>
+					<li><a href="collapsible.html">Iniciar sesión</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- ................Fin navbar................... -->
 	<section class="uno">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col s7 m 7 l7">	
+				<div class="col s6 m6 l6">	
 					<div class="row">
 						<div class="col l3">
 							Fechas
@@ -115,16 +127,84 @@
 						</div>
 						
 					</div>
-
+					<section class="filtros">
+							<div class="row">
+								<div class="col m3 l3">
+									<h5>Tamaño</h5>
+								</div>
+								<div class="col m9 l9">
+									<div class="col m4 l4">
+										<div class="input-field">
+				    						<select>
+				      							<option value="" disabled selected>Habitaciones</option>
+				      							<option value="1">1+</option>
+				      							<option value="2">2+</option>
+				      							<option value="3">3+</option>
+				      							<option value="4">4+</option>
+				      							<option value="5">5+</option>
+				    						</select>
+				    						<label></label>
+				  						</div>
+									</div>
+									<div class="col m4 l4">
+										<div class="input-field">
+				    						<select>
+				      							<option value="" disabled selected>Baños</option>
+				      							<option value="1">1+</option>
+				      							<option value="2">2+</option>
+				      							<option value="3">3+</option>
+				    						</select>
+				    						<label></label>
+				  						</div>
+									</div>
+									<div class="col m4 l4">
+										<div class="input-field">
+				    						<select>
+				      							<option value="" disabled selected>Camas</option>
+				      							<option value="1">1+</option>
+				      							<option value="2">2+</option>
+				      							<option value="3">3+</option>
+				      							<option value="4">4+</option>
+				      							<option value="5">5+</option>
+				    						</select>
+				    						<label></label>
+				  						</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<h5>Opciones</h5>
+								</div>
+								<div class="col l9 m9">
+									<form action="#">
+										    <p>
+				      							<input type="checkbox" id="test5" />
+				      							<label for="test5">
+				      								<h5>Superhost</h5>
+													<p>Quédate en casa de<br>anfitriones exceptcionales<br><a href="#">Más información</a></p>
+				      							</label>
+				    						</p>
+									</form>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<h5>Servicios</h5>
+								</div>
+							</div>
+					</section>
+					</div>
+					<div class="col s5 m5 l5">
+									<!-- aqui va el mapa -->
+					</div>				
 				</div>
-				<div class="col s5 m5 l5">
-					<!-- aqui va el mapa -->
-				</div>				
 			</div>
-		</div>
-	</section>
+		</section>
 	<script src="dist/js/script.js"></script>
-	<script src="assets/js/select.js"></script>
-	<script src="node_modules/nouislider/distribute/nouislider.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyGkPPCqknByIJrlNhsFMyinmbcQDzqJc&libraries=places&callback=initMap"
+        async defer></script>
 </body>
 </html>

@@ -73,12 +73,15 @@
 	padding-left:60px;
 }
 /*------ Footer------*/
+footer{
+	margin:0;
+}
 .page-footer .footer-copyright{
  color: #484848;
  background-color: white;	
 }
 .page-footer {
-  margin: 50px 20px;
+  padding: 50px 20px;
   background-color: white;
   color: #484848;
   ul li {
