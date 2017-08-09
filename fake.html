@@ -26,15 +26,15 @@
         font-size: 12px;
       }
       #map {
-        width: 440px;
+        width: 100%;
+        height:70%;
       }
       #listing {
         position: absolute;
         width: 200px;
         height: 470px;
         overflow: auto;
-        left: 442px;
-        top: 0px;
+        top: 105px;
         cursor: pointer;
         overflow-x: hidden;
       }
@@ -123,7 +123,8 @@
 					<div class="row">
 					    <div id="locationField">
 					      <input id="autocomplete" placeholder="Enter a city" type="text" />
-					    </div>						
+					    </div>	
+
 					</div>		
 				</div>
 				<div class="col m6 l6">
@@ -157,11 +158,593 @@
 
     <div id="map"></div>
 
+	<section class="uno">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col s12 m12 l12">	
+					<div class="row">
+						<div class="col l3">
+							<p><b>Fechas</b></p>
+						</div>
+						<div class="input-field col l3">
+          					<input id="icon_prefix" type="text" class="validate">
+          					<label for="icon_prefix">Fecha Inicio</label>
+       					</div>
+						<div class="input-field col l3">
+          					<input id="icon_prefix" type="text" class="validate">
+          					<label for="icon_prefix">Fecha Final</label>
+       					</div>
+       					<div class="col l3">					
+							<div class="col l6 center">
+							 	<label><i class="material-icons">person</i></label>
+  									<select class="browser-default">
+    									<option value="" disabled selected></option>
+    									<option value="1">1 Adulto</option>
+    									<option value="2">2 Adulto</option>
+    									<option value="3">3 Adulto</option>
+    									<option value="4">4 Adulto</option>
+  									</select>
+  							</div>						
+							<div class="col l6 center">
+								<label><i class="material-icons">child_friendly</i></label>
+  									<select class="browser-default">
+    									<option value="" disabled selected></option>
+    									<option value="1">1 Bebe</option>
+    									<option value="2">2 Bebe</option>
+    									<option value="3">1 Niño</option>
+    									<option value="4">2 Niños</option>
+  									</select>
+  							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col l3">
+							<p><b>Tipo de<br>habitacion</b></p>	
+						</div>
+						<div class="col l3 center-align">
+							<form action="#">
+    							<p>
+    								<input type="checkbox" id="test1"/> 
+    								<label for="test1"><i class="material-icons">home</i> Casa Entera</label>
+     							</p>
+     						</form>
+     					</div>
+						<div class="col l3">
+							<form action="#">
+    							<p>
+    								<input type="checkbox" id="test2"/> 
+    								<label for="test2"><i class="fa fa-bed" aria-hidden="true"></i> Habitación Privada</label>
+     							</p>
+     						</form>
+						</div>
+						<div class="col l3">
+							<form action="#">
+    							<p>
+    								<input type="checkbox" id="test3"/> 
+    								<label for="test3"><i class="fa fa-bed" aria-hidden="true"></i> Habitacion Compartida </label>
+     							</p>
+     						</form>
+						</div>					
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col s3">
+							<p><b>Rango de<br>Precios</b></p>
+						</div>
+						<div class="col s9">
+							<div id="test-slider"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s3">
+							<p><b>Reserva <br>Inmediata</b></p>
+						</div>
+						<div class="col s6">
+							<p>Anuncios que no requieren que el anfitrion acepte la solicitud</p>
+						</div>
+						<div class="col s3">
+							<div class="switch">
+   							 <label>
+      							Off
+      							<input type="checkbox">
+      							<span class="lever"></span>
+      							On
+    						</label>
+  							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col s3">
+							<a id="filtros" class="waves-effect waves-light btn">Filtros</a>
+						</div>	
+					</div>
+					<section id="filter" class="filtros hide">
+							<div class="row">
+								<div class="col m3 l3">
+									<p><b>Tamaño</b></p>
+								</div>
+								<div class="col m9 l9">
+									<div class="col m4 l4">
+										<div class="input-field">
+				    						<select>
+				      							<option value="" disabled selected>Habitaciones</option>
+				      							<optionp value="1">1+</option>
+				      							<option value="2">2+</option>
+				      							<option value="3">3+</option>
+				      							<option value="4">4+</option>
+				      							<option value="5">5+</option>
+				    						</select>
+				    						<label></label>
+				  						</div>
+									</div>
+									<div class="col m4 l4">
+										<div class="input-field">
+				    						<select>
+				      							<option value="" disabled selected>Baños</option>
+				      							<option value="1">1+</option>
+				      							<option value="2">2+</option>
+				      							<option value="3">3+</option>
+				    						</select>
+				    						<label></label>
+				  						</div>
+									</div>
+									<div class="col m4 l4">
+										<div class="input-field">
+				    						<select>
+				      							<option value="" disabled selected>Camas</option>
+				      							<option value="1">1+</option>
+				      							<option value="2">2+</option>
+				      							<option value="3">3+</option>
+				      							<option value="4">4+</option>
+				      							<option value="5">5+</option>
+				    						</select>
+				    						<label></label>
+				  						</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<p><b>Opciones</b></p>
+								</div>
+								<div class="col l4 m4">
+									<form action="#">
+										    <p>
+				      							<input type="checkbox" id="test5" />
+				      							<label for="test5">
+				      								<b>Superhost</b><br>Quédate en casa de<br>anfitriones exceptcionales<br><a href="#">Más información</a>
+				      							</label>
+				    						</p>
+									</form>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<p><b>Servicios</b></p>
+								</div>
+								<div class="col l9 m9">
+									<div class="col l4 m4">
+										<p>
+					      				<input type="checkbox" id="wifi" />
+					      				<label for="wifi">
+					      					<b>Internet inalámbrico<br>(wifi)</b>
+					      				</label>
+					      				</p>									
+									</div>
+									<div class="col l3 m3">
+										<p>
+						      				<input type="checkbox" id="tv" />
+						      				<label for="tv">
+						      					<b>TV</b>
+						      				</label>
+						      			</p>	
+									</div>
+								  	<div class="input-field col l5 m5">
+								    	<select multiple>
+								      		<option value="" disabled selected>Elige</option>
+								      		<option value="1">Cocina</option>
+								      		<option value="2">Jacuzzi</option>
+								      		<option value="3">Garage</option>
+								    	</select>
+								  	</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<p><b>Servicios</b></p>
+								</div>
+								<div class="col l9 m9">
+									<div class="col l4 m4">
+										<p>
+						      				<input type="checkbox" id="asc" />
+						      				<label for="asc">
+						      					<b>Edificio con ascensor</b>
+						      				</label>
+					      				</p>									
+									</div>
+									<div class="col l3 m3">
+										<p>
+					      					<input type="checkbox" id="gym" />
+					      					<label for="gym">
+					      						<b>Gimnasio</b>
+					      					</label>
+					      				</p>
+									</div>
+								  	<div class="input-field col l5 m5">
+								    	<select multiple>
+								      		<option value="" disabled selected>Elige</option>
+								      		<option value="1">Parking gratis</option>
+								      		<option value="2">Piscina</option>
+								      		<option value="3">Laberinto</option>
+								    	</select>
+								  	</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<p><b>Normas de la<br>casa</b></p>
+								</div>
+								<div class="col l9 m9">
+									<div class="col l4 m4">
+										<p>
+					      					<input type="checkbox" id="petallowed" />
+					      					<label for="petallowed">
+					      						<b>Admite mascotas</b>
+					      					</label>
+					      				</p>										
+									</div>
+									<div class="col l4 m4">
+										<p>
+					      					<input type="checkbox" id="event" />
+					      					<label for="event">
+					      						<b>Apto para eventos</b>
+					      					</label>
+					      				</p>										
+									</div>
+									<div class="col l4 m4">
+										<p>
+					      					<input type="checkbox" id="smoke" />
+					      					<label for="smoke">
+					      						<b>Apto para fumadores</b>
+					      					</label>
+					      				</p>										
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col l3 m3">
+									<p><b>Vecidanrios</b></p>
+								</div>
+								<div class="col l9 m9">
+									<div class="col l4 m4">
+										<p>
+						      				<input type="checkbox" id="no" />
+						      				<label for="no">
+						      					<b>Sin balcón</b>
+						      				</label>
+					      				</p>									
+									</div>
+									<div class="col l3 m3">
+										<p>
+					      					<input type="checkbox" id="al" />
+					      					<label for="al">
+					      						<b>Alfeizar</b>
+					      					</label>
+					      				</p>
+									</div>
+								  	<div class="input-field col l5 m5">
+								    	<select multiple>
+								      		<option value="" disabled selected>Elige</option>
+								      		<option value="1">Parking gratis</option>
+								      		<option value="2">Piscina</option>
+								      		<option value="3">Laberinto</option>
+								    	</select>
+								  	</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l5 m5"></div>
+								<div class="center-align col l7 m7">
+									<a id="cancelar" class="waves-effect waves-light btn">Cancelar</a> <a id="aplicar" class="waves-effect waves-light btn">Aplicar filtros</a>
+								</div>
+							</div>							
+					</section>
+					<section class="slider">
+					  <div class="row columna">
+						<div class="col l6">
+							<div class="slider">
+    						   <ul class="slides">
+     							<li>	
+     								<img src="dist/img/slider1/exterior-hotel.jpg" class="foto-slider-1">
+      							</li>
+     							<li>
+        							<img src="dist/img/slider1/clubfrances.jpg" class="foto-slider-1">       						
+      							</li>
+      							<li>
+        							<img src="dist/img/slider1/the-hotel-pool.jpg" class="foto-slider-1">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider1/download.jpg" class="foto-slider-1">
+      							</li>
+    						  </ul>
+    						</div>
+    						<div class="fin">
+    							<p class="parrafo-fin"><b>$100.000 CPL Hotel Hermoso con Vista al mar</b></p>
+    							<p class="parrafo-fin">Habitacion con Vista al mar</p>
+    							<p class="parrafo-fin">
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellitas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellitas" aria-hidden="true"></i>
+    								  4
+    							</p>
+    						</div>
+						</div>
+						<div class="col l6">
+							<div class="slider">
+    						   <ul class="slides">
+     							<li>	
+     								<img src="dist/img/slider2/foto-galerias-hotel-2_2.jpg" alt="">
+      							</li>
+     							<li>
+        							<img src="dist/img/slider2/pansione-sulic-apartamento-de-dos-piezas.124.jpg">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider2/restaurant-hotel-barcelo-dominican-beach37-10311.jpg">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider2/hoteles_destinia.jpg">
+      							</li>
+    						  </ul>
+  							</div>
+  							<div class="fin">
+    							<p class="parrafo-fin"><b>$50.000 Hotel con vista privilegiada</b></p>
+    							<p class="parrafo-fin">Grande habitacion con vista al mar</p>
+    							<p class="parrafo-fin">
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								  7
+    							</p>
+    						</div>
+  					     </div>
+					  </div>
+					<div class="row columna">
+						<div class="col l6">
+							<div class="slider">
+    						   <ul class="slides">
+     							<li>	
+     								<img src="dist/img/slider3/slider-hotel-nerja-playa-1-4.jpg" alt="">
+      							</li>
+     							<li>
+        							<img src="dist/img/slider3/pieza-hotel-antares.jpg">
+      							</li>
+      							<li>
+        							<img srrc="dist/img/slider3/20170117095711_876507.jpg">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider3/Own_Hotel_pieza.JPG">
+      							</li>
+    						  </ul>
+  							</div>
+  							<div class="fin">
+    							<p class="parrafo-fin"><b>$150.000 Hotel de lujo</b></p>
+    							<p class="parrafo-fin">Habitacion con exclusiva vista al mar</p>
+    							<p class="parrafo-fin">
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellitas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellitas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellitas" aria-hidden="true"></i>
+    								  3
+    							</p>
+    						</div>
+						</div>
+						<div class="col l6">
+							<div class="slider">
+    						   <ul class="slides">
+     							<li>	
+     								<img src="dist/img/slider4/HiltonBarna-4-a.jpg" alt="">
+      							</li>
+     							<li>
+        							<img src="dist/img/slider4/download.jpg">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider4/habitacion-hotel-nerja-5_3-843-450.jpg">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider4/Pequeños-hoteles-de-lujo.jpg">
+      							</li>
+    						  </ul>
+  							</div>
+  							<div class="fin">
+    							<p class="parrafo-fin"><b>$78.990 Hotel con hermosa vista al mar</b></p>
+    							<p class="parrafo-fin">Exclusivo hotel con resort</p>
+    							<p class="parrafo-fin">
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellitas" aria-hidden="true"></i>
+    								  4
+    							</p>
+    						</div>
+					    </div>
+					</div>
+						<div class="row columna">
+						<div class="col l6">
+							<div class="slider">
+    						   <ul class="slides">
+     							<li>	
+     								<img src="dist/img/slider5/trivago-hoteles.jpg" alt="">
+      							</li>
+     							<li>
+        							<img src="dist/img/slider5/slider-hotel-nerja-playa-1-3.jpg">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider5/images.jpg">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider5/pieza.jpg">
+      							</li>
+    						  </ul>
+  							</div>
+  							<div class="fin">
+    							<p class="parrafo-fin"><b>$250.000 CPL Hotel exclusivo</b></p>
+    							<p class="parrafo-fin">Hotel con habitacion exclusiva</p>
+    							<p class="parrafo-fin">
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    							  7
+    							</p>
+    						</div>
+						</div>
+						<div class="col l6">
+							<div class="slider">
+    						   <ul class="slides">
+     							<li>	
+     								<img src="dist/img/slider6/the-balcony-view.jpg" alt="">
+      							</li>
+     							<li>
+        							<img src="dist/img/slider6/mejores-hoteles-de-playa-seaside-grand-hotel-residencia-maspalomas-gran-canaria-habitacion-piscina.jpg">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider6/hotel+valdivia.png">
+      							</li>
+      							<li>
+        							<img src="dist/img/slider5/pieza.jpg">
+      							</li>
+    						  </ul>
+  							</div>
+  							<div class="fin">
+    							<p class="parrafo-fin"><b>$180.000 CPL Hotel con exclusiva playa privada</b></p>
+    							<p class="parrafo-fin">Habitacion con baño compartido</p>
+    							<p class="parrafo-fin">
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								<i class="fa fa-star estrellas" aria-hidden="true"></i>
+    								  9
+    							</p>
+    						</div>
+						</div>
+					  </div>
+					</section>
+					</div>
+					<div class="col s5 m5 l5">
+									<!-- aqui va el mapa -->
+						<div id="map"></div>
+					</div>				
+				</div>
+			</div>
+		</section>
+	 <!--............Comienzo footer ..................................-->
+  	<hr>
+  	<footer class="page-footer">
+      	<div class="container-fluid">
+          	<div class="row">
+              	<div class="col l3 s6 left">
+                  	<select class="browser-default">
+                      	<option value="" disabled selected>Español</option>
+                      	<option value="1">Option 1</option>
+                      	<option value="2">Option 2</option>
+                      	<option value="3">Option 3</option>
+                  	</select>
+                  	<select class="browser-default">
+                      	<option value="" disabled selected>USD</option>
+                      	<option value="1">Option 1</option>
+                      	<option value="2">Option 2</option>
+                      	<option value="3">Option 3</option>
+                  	</select>
+              	</div>
+            	<div class="col l3 s6">
+                	<h6><strong>Airbnb</strong></h6>
+                    	<ul>
+                      		<li><a href="" class="grey-text">Acerca de</a></li>
+                      		<li><a href="" class="grey-text">Empleo</a></li>
+                      		<li><a href="" class="grey-text">Prensa</a></li>
+                      		<li><a href="" class="grey-text">Políticas</a></li>
+                      		<li><a href="" class="grey-text">Ayuda</a></li>
+                    	</ul>
+            	</div>
+            	<div class="col l3 s6">
+                	<h6><strong>Descubre Airbnb</strong></h6>
+                    	<ul>
+                     		<li><a href="" class="grey-text">Confianza y seguridad</a></li>
+                      		<li><a href="" class="grey-text">Invitaciones</a></li>
+                      		<li><a href="" class="grey-text">Airbnb Action</a></li>
+                      		<li><a href="" class="grey-text">Viajes de negocios</a></li>
+                      		<li><a href="" class="grey-text">Guías</a></li>
+                    	</ul>
+            	</div>
+            	<div class="col l3 s4">
+                	<h6><strong>Hospedar</strong></h6>
+                    	<ul>
+                      		<li><a href="" class="grey-text">Razones para hospedar</a></li>
+                      		<li><a href="" class="grey-text">Hospitalidad</a></li>
+                      		<li><a href="" class="grey-text">Ser un anfitrión <br>responsable</a></li>
+                    	</ul>
+            	</div>
+         	</div>
+    	</div>
+    	<hr>
+    	<div class="footer-copyright">
+    		<div class="container">
+            	<img src="dist/img/airbnb-gray.png" alt="">
+                   &nbsp; © Airbnb, Inc
+                <a class=" right" href="#!"><img src="dist/img/facebook-letter-logo.png" alt=""></a>
+                <a class=" right" href="#!"><img src="dist/img/twitter-logo-silhouette.png" alt=""></a>
+                <a class=" right" href="#!"><img src="dist/img/instagram-social-network-logo-of-photo-camera.png" alt=""></a>
+                <a class=" right" href="#!">Mapa del sitio</a>
+                <a class=" right" href="#!">Términos y privacidad</a>  
+            </div>
+    	</div>
+  	</footer>
+
     <div id="listing">
       <table id="resultsTable">
         <tbody id="results"></tbody>
       </table>
     </div>
+
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+
+
 
 
     <script>
