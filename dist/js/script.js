@@ -20253,6 +20253,17 @@ if (jQuery) {
   };
 })(jQuery);
 
+$(document).ready(function(){	
+	$("#filtros").click(function(){
+		if($("#filter").hasClass("hide")== true){
+			$("#filter").removeClass("hide");
+		}
+		else{
+			$("#filter").addClass("hide");
+		}
+
+	});
+})
 
 
 /* CALENDARIO*/
@@ -20268,7 +20279,12 @@ $(document).ready(function() {
 });
 	/*SELECT*/
 	$('select').material_select();
-	$('.carousel').carousel();
+	$('.carousel').carousel({
+            dist:0, /* la propiedad dist en 0  quita el zoom pero no está funcionando*/
+            shift:0,
+            padding:20,
+
+      });
 
 	/*NAV NAV NAV*/
 	$(window).scroll(function() {
@@ -20308,4 +20324,13 @@ $(document).ready(function() {
      	decimals: 0
    		})
   	});
+    $('.slider').slider();
+    // Pause slider
+    $('.slider').slider('pause');
+    // Start slider
+    $('.slider').slider('start');
+    // Next slide
+    $('.slider').slider('next');
+    // Previous slide
+    $('.slider').slider('prev');
  });
