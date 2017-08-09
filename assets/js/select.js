@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('select').material_select();
 
    var slider = document.getElementById('test-slider');
     $('.slider').slider();
@@ -10,5 +9,5 @@ $(document).ready(function() {
     // Next slide
     $('.slider').slider('next');
     // Previous slide
-    $('.slider').slider('prev');*/
+    $('.slider').slider('prev');
  });
