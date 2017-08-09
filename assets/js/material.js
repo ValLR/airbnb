@@ -16,11 +16,21 @@ $(document).ready(function() {
 	/*NAV NAV NAV*/
 	$(window).scroll(function() {
 		
-		if($(this).scrollTop() > 300) { 
+		if($(this).scrollTop() > 100) { 
 			$('.nav-wrapper').removeClass('transparent z-depth-0');	
 			$('.nav-wrapper').addClass('nav');
 		} else {
 			$('.nav-wrapper').removeClass('nav');
 		}
+	});
+
+	$("#filtros").click(function(){
+		if($("#filter").hasClass("hide")== true){
+			$("#filter").removeClass("hide");
+		}
+		else{
+			$("#filter").addClass("hide");
+		}
+
 	});
 });
