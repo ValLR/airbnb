@@ -20268,6 +20268,7 @@ $(document).ready(function() {
 });
 	/*SELECT*/
 	$('select').material_select();
+	$('.carousel').carousel();
 
 	/*NAV NAV NAV*/
 	$(window).scroll(function() {
