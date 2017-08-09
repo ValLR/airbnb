@@ -20253,15 +20253,6 @@ if (jQuery) {
   };
 })(jQuery);
 
-function initMap(){
-    var map = new google.maps.Map(document.getElementById("map"),{
-    zoom: 5,
-    center: {lat: -9.1191427, lng: -77.0349046},
-    mapTypeControl: false,
-    zoomControl: false,
-    streetViewControl: false,
-  });
-}
 $(document).ready(function(){	
 	$("#filtros").click(function(){
 		if($("#filter").hasClass("hide")== true){
@@ -20272,26 +20263,27 @@ $(document).ready(function(){
 		}
 
 	});
+	
 })
+
 $(document).ready(function(){
 
-	$('.datepicker').pickadate({
+/*	$('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15, // Creates a dropdown of 15 years to control year,
     today: 'Today',
     clear: 'Clear',
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
-	});	
+	});*/
 	
-	$('.carousel').carousel({
+	/*$('.carousel').carousel({
             dist:0, //la propiedad dist en 0  quita el zoom pero no está funcionando
             shift:0,
             padding:20,
 
-      });
+      });*/
 
-	/*NAV NAV NAV*/
 	
 	$(window).scroll(function() {
 		
@@ -20305,7 +20297,6 @@ $(document).ready(function(){
 
 });
 $(document).ready(function() {
-    $('select').material_select();
 
    var slider = document.getElementById('test-slider');
     $('.slider').slider();
@@ -20316,5 +20307,5 @@ $(document).ready(function() {
     // Next slide
     $('.slider').slider('next');
     // Previous slide
-    $('.slider').slider('prev');*/
+    $('.slider').slider('prev');
  });
